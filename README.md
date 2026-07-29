@@ -1,22 +1,36 @@
-# Personal Website
+# Fajar Slamet Aghafianto Portfolio
 
-Ini adalah proyek pertama saya: membuat website portofolio pribadi.
-Website ini akan berisi informasi tentang saya, keahlian, dan proyek yang pernah saya buat.
+Modern personal portfolio built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and Lucide React Icons.
 
-## 🌐 Preview
-Nantinya, website ini bisa diakses secara online melalui GitHub Pages.
+## Features
 
-## 📄 Halaman
-- Home
-- About
-- Projects
-- Contact
+- Dark and light mode
+- Smooth scrolling and scroll progress indicator
+- Animated hero, sections, cards, carousel, and page transitions
+- SEO metadata, Open Graph, robots.txt, sitemap.xml, and JSON-LD structured data
+- Responsive layout for mobile, tablet, laptop, and desktop
+- Component-based architecture with reusable UI primitives
+- Accessible semantic HTML, ARIA labels, keyboard-friendly controls, and high-contrast colors
 
-## 🛠️ Teknologi yang digunakan
-- HTML5 (struktur halaman)
-- CSS3 (desain dan layout)
-- Markdown (dokumentasi proyek)
+## Run Locally
 
-## 🔗 Social Links
-- [GitHub](https://github.com/fajarajh00)
-- [LinkedIn](https://linkedin.com/in/fajar-slamet-aghafianto-24b09b379)
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Production Build
+
+```bash
+npm run build
+npm run start
+```
+
+## Deploy to Vercel
+
+1. Push this repository to GitHub.
+2. Open Vercel and import the repository.
+3. Use the default Next.js settings.
+4. Deploy.

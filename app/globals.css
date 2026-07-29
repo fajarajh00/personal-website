@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #09090b;
+  color: #fafafa;
+  text-rendering: optimizeLegibility;
+}
+
+.light body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.35);
+}
+
+@layer utilities {
+  .glass {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(22px);
+  }
+
+  .light .glass {
+    border-color: rgba(15, 23, 42, 0.12);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.52));
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
