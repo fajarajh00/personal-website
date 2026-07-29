@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   background: #09090b;
   color: #fafafa;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
@@ -29,9 +30,9 @@ body {
 @layer utilities {
   .glass {
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(22px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(16px);
   }
 
   .light .glass {
@@ -41,5 +42,9 @@ body {
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
   }
 }

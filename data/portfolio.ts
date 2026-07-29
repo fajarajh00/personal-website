@@ -10,6 +10,8 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "#contact" }
 ];
 
+export const sectionIds = navItems.map((item) => item.href.replace("#", ""));
+
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/fajarajh00", icon: Github },
   { label: "LinkedIn", href: "https://linkedin.com/in/fajar-slamet-aghafianto-24b09b379", icon: Linkedin },

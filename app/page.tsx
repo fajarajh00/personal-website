@@ -9,20 +9,15 @@ import { Skills } from "@/components/sections/skills";
 import { TestimonialsLazy } from "@/components/sections/testimonials-lazy";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
-import { BackgroundEffects } from "@/components/ui/background-effects";
 import { BackToTop } from "@/components/ui/back-to-top";
-import { LoadingScreen } from "@/components/ui/loading-screen";
-import { PageTransition } from "@/components/ui/page-transition";
-import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { Background } from "@/components/ui/background";
 import { StructuredData } from "@/components/seo/structured-data";
 
 export default function HomePage() {
   return (
-    <PageTransition>
+    <>
       <StructuredData />
-      <LoadingScreen />
-      <ScrollProgress />
-      <BackgroundEffects />
+      <Background />
       <Navbar />
       <main>
         <Hero />
@@ -37,6 +32,6 @@ export default function HomePage() {
       </main>
       <Footer />
       <BackToTop />
-    </PageTransition>
+    </>
   );
 }

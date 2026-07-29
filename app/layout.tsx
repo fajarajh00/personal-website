@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "@/styles/theme.css";
 
 const siteUrl = "https://fajar-portfolio.vercel.app";
 const inter = Inter({ subsets: ["latin"], variable: "--font-geist-sans", display: "swap" });
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Portfolio modern Fajar Slamet Aghafianto, frontend engineer yang membangun produk web cepat, elegan, dan mudah digunakan.",
   keywords: ["Frontend Engineer", "React", "Next.js", "TypeScript", "UI UX", "Portfolio"],
+  alternates: { canonical: siteUrl },
   authors: [{ name: "Fajar Slamet Aghafianto" }],
   creator: "Fajar Slamet Aghafianto",
   openGraph: {
